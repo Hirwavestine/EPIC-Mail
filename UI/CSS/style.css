@@ -1,10 +1,6 @@
 input[type="text"],
 input[type="password"]
 {   
-     /* display:block;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    padding: 4px;  */
     height: 32px;
     border: none;
     outline: none;
@@ -14,11 +10,7 @@ input[type="password"]
     font-size: 15px;
     transition: 0.2s ease;
 
-}
-p{
-    color:#4d94ff
-    
-}
+} 
 h1{
     margin:0 0 20px 0;
     font-weight: 300;
@@ -35,14 +27,10 @@ body{
 }
 #login-page
 {
-    /* position: relative;
-    margin: 5% auto;
-    height: 400px; */
-    /* background: #ffff; */
     display: table;
     width: 100%;
-    padding-top: 40px;
-
+    padding-top: 150px;
+    position: absolute;
 }
 
 .text-header{
@@ -50,21 +38,13 @@ body{
     padding-top: 50px;
 }
 #form{
-    /* position: absolute;
-    box-sizing: border-box;
-    padding: 40px; */
+
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     padding-top: 13px;  
-    /* width: 320px;
-    height: 420px; */
+    
     color:#fff;
-    /* margin:0 0 20px 0; */
-    /* background:#000; */
-    /* top:50%;
-    left:50%;
-    transform:translate(50%, 50%); */
 
 }
 
@@ -76,7 +56,199 @@ body{
 }
 
 .btn-login{
-    backgroun-color: green;
+    background-color: green;
     border: 1px solid green;
     padding: 10px;
 }
+header{
+height: 70px;
+width: 100%;
+background: rgb(3, 3, 12);
+color: #FFFFFF;
+overflow:auto;
+
+}
+
+.header-style{
+  position: fixed;
+ 
+}
+
+.logo-style{
+  height: 50px;
+  margin-top: 15px;
+}
+
+header nav ul {
+    display:block;
+   margin:0 auto;
+   width: fit-content;
+
+}
+
+.content-div {
+  margin-top: 80px;
+}
+
+header nav ul li a {
+    font-family: catamaran;
+    font-size: 16px;
+    color:#111;
+    text-transform: uppercase;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:white;
+    position: fixed; 
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .sidebar-links{
+    margin-top: 70px;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: rgb(57, 59, 57);
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover {
+    background-color: #555;
+    color: white;
+  } 
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  /*table of inbox message */
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  box-sizing: content-box;
+}
+
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  * {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+}
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   /* background-color: red;*/
+    color:black;
+    text-align: center;
+  }
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
