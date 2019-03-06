@@ -1,3 +1,4 @@
+/*styling login page */
 input[type="text"],
 input[type="password"]
 {   
@@ -78,14 +79,14 @@ overflow:auto;
   height: 50px;
   margin-top: 15px;
 }
-
+/*
 header nav ul {
     display:block;
    margin:0 auto;
    width: fit-content;
 
 }
-
+*/
 .content-div {
   margin-top: 80px;
 }
@@ -252,3 +253,127 @@ ul li {
       margin-top: 0;
     }
   }
+  /*styling chat*/
+
+  .chatbx{
+    widows: 500px;
+    min-width: width 390px;
+    background: #fff;
+}
+.chatlgs{
+    padding:10px;
+    widows: 100%;
+    height: 450px;
+    background: #eee;   
+}
+.chat {
+    display:flex;
+    flex-flow:row wrap;
+    align-items: #ccc;
+    margin-bottom:10px;
+}
+.chat .user-photo {
+    width: 60px;
+    height:60px;
+    background: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.chat .user-photo img {
+    width:100%;
+}
+.chat .chat-message{
+    widows: 80px;
+    padding:15px;
+    margin:5px 10px 0;
+}
+.friend .chat-message {
+    background:#1d1add;
+}
+.self .chat-message {
+    background: #1b6970;
+}
+.chat-form {
+    margin-top:20px;
+    display:flex;
+    align-items:flex-start;
+}
+.chat-form textarea {
+    background: #fbfbfb;
+    width: 100%;
+    height:100px;
+    border:2px solid #eee;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.chat-form textarea:focus{
+    background:#fff;
+}
+.chatlgs::-webkit-scrollbar-thumb{
+    border:5px;
+    background: rgba(0,0,.1);
+}
+
+.chatlgs::-webkit-scrollbar{
+ width:10px;
+}
+
+.chat-form button{
+    background: #1ddced;
+    padding: 5px 15px;
+    font-size:30px;
+    color:#fff;
+    border: none;
+    margin:0 10px;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #0eb2c1;
+    cursor:pointer;
+}
+.chat-form button:hover {
+    background: #4a4994;
+}
+/*compose message styling*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 100px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
