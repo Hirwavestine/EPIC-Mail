@@ -79,14 +79,7 @@ overflow:auto;
   height: 50px;
   margin-top: 15px;
 }
-/*
-header nav ul {
-    display:block;
-   margin:0 auto;
-   width: fit-content;
 
-}
-*/
 .content-div {
   margin-top: 80px;
 }
@@ -99,7 +92,7 @@ header nav ul li a {
 }
 
 /* The side navigation menu */
-.sidebar {
+/*.sidebar {
     margin: 0;
     padding: 0;
     width: 200px;

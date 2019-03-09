@@ -35,7 +35,7 @@ input[type="password"]
 body{
     margin:0;
     padding:0;
-    background-color: aqua;
+    background-color:white;
     font-size: 16px;
     font-family: sans-serif;
     font-weight: 300;
@@ -59,14 +59,15 @@ body{
 }
 
 .div-form-container{
-    background-color: black;
+    border-radius: 50px;
+     background-color:rgb(28, 172, 164);
     max-width: 500px;
     padding: 20px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .btn-login{
-    background-color: green;
-    border: 1px solid green;
+    background-color: black;
+    border: 1px solid black;
     padding: 10px;
 }
