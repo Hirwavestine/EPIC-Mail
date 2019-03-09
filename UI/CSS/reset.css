@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Judson', serif;
-    background: turquoise;
+    background:white;
    }
 
    .logo{
@@ -82,7 +82,7 @@ body {
    }
 
    input[type=submit] {
-    background-color: #000fff;
+    background-color: black;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -92,7 +92,7 @@ body {
        
    div {
      border-radius: 50px;
-     background-color: royalblue;
+     background-color:rgb(28, 172, 164);
      padding: 20px;
      width:40%;
    
