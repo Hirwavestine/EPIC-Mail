@@ -1,8 +1,24 @@
-<link href="../CSS/style.css" rel ="stylesheet" type="text/css" >
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
+<!DOCTYPE html>
+<html>
+  <Head>
+  <title>
+    Sending a message
+  </title>
+  <link rel="stylesheet" type="text/css" href="../CSS/composemessage.css" />
+  </Head>
+  <body>
+    <div class="contact-title">
+      <h1>Say hello </h1>
+      <h2>Your friends are ready to collaborate with you!</h2>
+    
+    <div class="contact-form">
+      <form id="contact-form" method="post" action="">
+        <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+        <br>
+        <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+        <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea></br>
+        <input type="submit" class="form-control submit" value="SEND MESSAGE"><br>
+        </form>
         </div>
-      </div>
+    </body>
+      </html>
