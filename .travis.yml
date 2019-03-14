@@ -1,8 +1,5 @@
 language: node_js
 node_js:
 - lts/*
-before_install:
-- npm i -g npm@3.5.2
-cache: npm
   on:
     all_branches: true
