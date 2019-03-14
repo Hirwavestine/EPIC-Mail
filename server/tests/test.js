@@ -78,7 +78,7 @@ chai.should();
 GET SENT MESSAGES
 */
 describe('/Get Sent messages', () => {
-  it('it should GET all Sent messages', (done) => {
+  it('it should get all Sent messages', (done) => {
     chai.request(server)
         .get('/api/v1/messages/sent')
         .end((err, res) => {

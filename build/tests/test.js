@@ -86,7 +86,7 @@ describe('/Get Unread messages', function () {
 GET SENT MESSAGES
 */
 describe('/Get Sent messages', function () {
-  it('it should GET all Sent messages', function (done) {
+  it('it should get all Sent messages', function (done) {
     _chai2.default.request(_server2.default).get('/api/v1/messages/sent').end(function (err, res) {
       res.body.should.be.a('array');
       done();
