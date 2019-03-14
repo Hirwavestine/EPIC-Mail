@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require babel-register server/tests",
+    "test": "mocha --require babel-register --exit server/tests",
     "build": "babel server --out-dir build",
     "start": "node build/server.js"
   },
