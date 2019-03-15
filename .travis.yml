@@ -4,3 +4,10 @@ node_js:
 script: npm test
 after_success:
 - npm run coverage
+deploy:
+  provider: heroku
+  api_key:
+    secure: 5ee58ef5-54f8-4006-b6a0-1ca1958cedd0
+  app: pic-mail
+  on:
+    all_branches: true
